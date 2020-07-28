@@ -1,0 +1,14 @@
+\documentclass[12pt]{article}
+\begin{document}
+$$\frac{y_i - y_{i-1}}{dt} = (1/\tau) * (x_i - y_i)$$
+$$y_i - y_{i-1} = (dt/\tau) * (x_i - y_i)$$
+$$y_i + (dt/\tau)y_i = (dt/\tau)x_i + y_{i-1}$$
+$$(1 + \frac{dt}{\tau})y_i = \frac{dt}{\tau}x_i + y_{i-1}$$
+$$\frac{\tau+dt}{\tau}y_i = \frac{dt}{\tau}x_i + y_{i-1} $$
+
+$$y_i = \frac{dt}{\tau+dt}* x_i + \frac{\tau}{\tau+dt} * y_{i-1} $$
+$$\alpha = \frac{dt}{\tau+dt} ;  1 - \alpha = \frac{\tau}{\tau+dt} $$
+
+
+$$y_i = \alpha * x_i + (1-\alpha) * y_{i-1}$$
+\end{document}
